@@ -1,0 +1,6 @@
+export PS1='\n\[\033[32m\]\u@\h\[\033[37m\]:\[\033[33m\]\w\[\033[37m\]\n$ '
+export EDITOR=vim
+export TERM="xterm-256color"
+
+source /home/racecar/racecar_ws/.dotfiles/_bash_aliases
+source /home/racecar/racecar_ws/.dotfiles/_racecars

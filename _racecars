@@ -1,0 +1,15 @@
+export ROS_IP=racecar
+export ROS_HOSTNAME=racecar
+export ROS_MASTER_URI=http://racecar:11311
+
+# export SCANNER_TYPE=velodyne
+export SCANNER_TYPE=hokuyo
+export PYTHONPATH="/home/racecar/racecar_ws/src/scripts:$PYTHONPATH"
+
+alias teleop="roslaunch racecar_mn teleop.launch"
+alias safety="roslaunch safety safety.launch"
+alias controller="roslaunch controller controller.launch"
+
+source /opt/ros/melodic/setup.bash
+source /home/racecar/racecar_ws/.catkin_ws/devel/setup.bash
+# source /home/racecar/cartographer_ws/devel_isolated/setup.bash
