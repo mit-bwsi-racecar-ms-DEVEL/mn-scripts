@@ -1,2 +1,5 @@
 alias vi=vim
 alias src='source ~/.bashrc'
+
+alias jupyter-kill="pkill -f jupyter-notebook"
+alias jupyter-grep="ps aux | grep jupyter-notebook"
