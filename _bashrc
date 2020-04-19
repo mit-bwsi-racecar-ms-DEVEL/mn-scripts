@@ -1,6 +1,9 @@
-export PS1='\n\[\033[32m\]\u@\h\[\033[37m\]:\[\033[33m\]\w\[\033[37m\]\n$ '
-export EDITOR=vim
+# Add a newline before the prompt, and insert a newline before the "$ "
+export PS1="\n${PS1::-3}\n\$ "
+export EDITOR=gedit
 export TERM="xterm-256color"
 
-source /home/racecar/racecar_ws/.scripts/_bash_aliases
-source /home/racecar/racecar_ws/.scripts/_racecars
+export RACECAR_SCRIPT_BASE=/home/racecar/racecar_ws/base_ws/src/mn-scripts
+
+# source $RACECAR_SCRIPT_BASE/_bash_aliases
+source $RACECAR_SCRIPT_BASE/_racecars

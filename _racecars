@@ -1,8 +1,9 @@
 export ROS_IP=racecar
 export ROS_HOSTNAME=racecar
-export ROS_MASTER_URI=http://racecar:11311
+export ROS_MASTER_URI=http://$ROS_HOSTNAME:11311
 
-alias teleop="roslaunch racecar_mn teleop.launch"
+source /opt/ros/eloquent/setup.bash
+source /home/racecar/racecar_ws/install/setup.bash
 
-source /opt/ros/melodic/setup.bash
-source /home/racecar/racecar_ws/.catkin_ws/devel/setup.bash
+alias teleop="ros2 launch racecar_mn teleop.launch.py"
+alias ydlidar="ros2 launch ydlidar ydlidar_launch.py"
