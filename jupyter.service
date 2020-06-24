@@ -1,0 +1,15 @@
+[Unit]
+Description=Jupyter Workspace
+
+[Service]
+Type=simple
+PIDFile=/run/jupyter.pid
+ExecStart=/home/racecar/racecar_ws/base_ws/src/mn-scripts/start_jupyter.sh
+User=racecar
+Group=racecar
+WorkingDirectory=/
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
