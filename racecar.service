@@ -1,0 +1,11 @@
+[Unit]
+Description=racecar
+
+[Service]
+type=forking
+ExecStart=/home/racecar/racecar_ws/base_ws/src/mn-scripts/start.sh
+User=racecar
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
