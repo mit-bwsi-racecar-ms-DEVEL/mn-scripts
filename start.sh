@@ -6,7 +6,7 @@ export ROS_HOSTNAME=racecar
 export ROS_MASTER_URI=http://$ROS_HOSTNAME:11311
 
 source /opt/ros/eloquent/setup.bash
-source /home/racecar/racecar_ws/base_ws/install/setup.bash
-source /home/racecar/racecar_ws/base_ws/install/local_setup.bash
+source /home/racecar/racecar_ws/install/setup.bash
+source /home/racecar/racecar_ws/install/local_setup.bash
 
 ros2 launch racecar_mn teleop.launch.py
