@@ -11,5 +11,5 @@ export RACECAR_SCRIPT_BASE=/home/racecar/racecar_ws/base_ws/src/mn-scripts
 source $RACECAR_SCRIPT_BASE/_racecars
 
 # source ydlidar setup files
-source /home/racecar/racecar_ws/base_ws/install/setup.bash
-source /home/racecar/racecar_ws/base_ws/install/local_setup.bash 
+# source /home/racecar/racecar_ws/base_ws/install/setup.bash
+# source /home/racecar/racecar_ws/base_ws/install/local_setup.bash
